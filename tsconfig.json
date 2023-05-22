@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "esnext",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "strict": true,
+    "skipLibCheck": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "types": ["vite/client"],
+    "resolveJsonModule": true,
+  },
+  "vueCompilerOptions": {
+    "target": 3, // or 2.7 for Vue 2
+    "plugins": [
+      "@vue-macros/volar/define-models",
+    ],
+    "defineModels": {
+      "unified": true
+    }
+  },
+  "exclude": [
+    "src/utils/transformlat.ts"
+  ]
+}
