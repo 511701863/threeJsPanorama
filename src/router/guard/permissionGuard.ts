@@ -24,8 +24,6 @@ export function createPermissionGuard(router: Router) {
                 redirect: '/notFound'
             }];
             arr.forEach((route: any) => {
-                console.log(route);
-
                 router.addRoute(route);
             })
             increment()
